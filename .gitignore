@@ -1,0 +1,7 @@
+dist
+node_modules
+package-lock.json
+package.json
+assets
+p5.js
+p5.sound.min.js

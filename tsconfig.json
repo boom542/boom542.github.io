@@ -1,0 +1,21 @@
+{ // TypeScript configuration file: provides options to the TypeScript 
+    // compiler (tsc) and makes VSCode recognize this folder as a TS project,
+    // enabling the VSCode build tasks "tsc: build" and "tsc: watch".
+    "compilerOptions": {
+      "module": "ES2015",
+      "lib": ["dom", "es2015"],
+      "allowJs": true,
+      "checkJs": true,
+      "types": ["p5/global", "p5/index"],
+      "target": "es6",            // Compatible with older browsers
+      "moduleResolution": "Node", // Tell tsc to look in node_modules for modules
+      "sourceMap": false,          // Creates *.js.map files
+      "strict": true,             // Strict types, eg. prohibits `var x=0; x=null`
+      "alwaysStrict": true,        // Enable JavaScript's "use strict" mode
+      "outDir": "dist",
+      "rootDir": "src",
+      "noEmitOnError": false
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+  }
